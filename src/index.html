@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>TO-DO LIST</title>
+  </head>
+  <body>
+    <!-- Agregar este div modal en tu HTML -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+
+        <h2>NUEVA TAREA</h2>
+
+        <form id="sale-form" class="form-section">
+          <label for="customer-name-field">Titulo:</label>
+          <input
+            type="text"
+            id="customer-name-field"
+            class="form-field"
+            required
+          />
+
+          <label for="notes-field">Descripcion:</label>
+          <textarea id="notes-field" class="form-field" required></textarea>
+
+          <label for="real-estate-field">Estatus:</label>
+          <select id="real-estate-field" class="form-field" required>
+            <option value="default">Selecciona la prioridad...</option>
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+          </select>
+
+          <label for="sale-date-field">Fecha de Venta:</label>
+          <input type="date" id="sale-date-field" class="form-field" required />
+
+          <label for="salesman-field">Vendedor:</label>
+          <input type="text" id="salesman-field" required />
+
+          <label for="notes-field">Detalles de la Venta:</label>
+          <textarea id="notes-field" class="form-field" required></textarea>
+
+          <button type="submit" class="btn-submit">Guardar Venta</button>
+        </form>
+      </div>
+    </div>
+
+    <section id="top_mejores_juegos">
+      <h1>TO DO LIST</h1>
+      <div class="nuevasTareas">
+        <button id="addHomework" class="btn-action">Agregar tarea</button>
+      </div>
+      <div class="table-header">
+        <div class="input-group">
+          <input type="search" placeholder="Search Data..." />
+          <img src="./img/search.png" alt="Search" />
+        </div>
+      </div>
+      <section id="table-body">
+        <table id="tablaDatosApi">
+          <thead>
+            <tr>
+              <th>Titulo<span class="icon-arrow">&UpArrow;</span></th>
+              <th>Descripcion</th>
+              <th>Status</th>
+              <th>Prioridad</th>
+              <th>etiqueta</th>
+              <th>Fecha de vencimiento</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aqui van los datos por JavaScript-->
+          </tbody>
+        </table>
+      </section>
+    </section>
+    <script src="script.js" defer></script>
+  </body>
+</html>
