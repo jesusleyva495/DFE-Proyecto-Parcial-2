@@ -10,19 +10,13 @@
   border: 0;
 }
 
-main {
-  padding-top: 90px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  background-color: #120907;
+  background: linear-gradient(#02534e, #581f4e);
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
 }
 
@@ -36,8 +30,11 @@ input {
   color: white;
 }
 
-::placeholder {
-  color: #209ed8;
+.colorful-placeholder::placeholder {
+  color: transparent; /* Oculta el texto del placeholder predeterminado */
+  background-image: linear-gradient(#DAE527, #EEC611); /* Define el fondo degradado con una gama de colores */
+  -webkit-background-clip: text; /* Indica que el fondo degradado se aplique solo al texto */
+  background-clip: text; /* Propiedad equivalente para navegadores no basados en WebKit */
 }
 
 /* #endregion */
@@ -46,7 +43,6 @@ input {
 section {
   scroll-margin-top: 90px;
   padding: 45px 90px;
-  border: 1px dashed #122a40;
 }
 
 section > h1 {
@@ -63,7 +59,6 @@ section > h1 {
 .table-header {
   width: 100%;
   height: 10%;
-  background-color: #120907;
   padding: 0.8rem 1rem;
 
   display: flex;
@@ -139,7 +134,7 @@ thead th {
   text-transform: capitalize;
 }
 
-.filtro{
+.filtro {
   display: none;
 }
 /* #endregion */
@@ -278,15 +273,6 @@ button.btn:hover {
   background-color: #e2e9f1;
 }
 
-button.btn-action {
-  background-color: #354a5f;
-  color: #fff;
-}
-
-button.btn-action:hover {
-  background-color: #22303f;
-}
-
 button.btn-submit {
   background-color: #3398db;
   color: #fff;
@@ -317,7 +303,6 @@ button.btn-submit:hover {
   padding: 20px;
 }
 
-
 .close {
   display: block;
   font-size: 40px;
@@ -327,4 +312,32 @@ button.btn-submit:hover {
   cursor: pointer;
 }
 
+/* #endregion */
+
+/* #region estatus */
+
+.true {
+  margin-top: 30px;
+  margin-right: 50px;
+  background-color: #86e49d;
+  color: #006b21;
+  display: inline;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+
+.false {
+  margin-top: 30px;
+  margin-right: 50px;
+  background-color: #d893a3;
+  color: #b30021;
+  display: inline;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: center;
+}
 /* #endregion */
