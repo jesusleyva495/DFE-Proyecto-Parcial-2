@@ -26,7 +26,7 @@
         <h2>NUEVA TAREA</h2>
 
         <form id="sale-form" class="form-section">
-          <label for="customer-name-field">Titulo:</label>
+          <label for="customer-name-field"><strong>Titulo:</strong></label>
           <input
             type="text"
             id="customer-name-field"
@@ -34,17 +34,17 @@
             required
           />
 
-          <label for="notes-field">Descripcion:</label>
+          <label for="notes-field"><strong>Descripcion:</strong></label>
           <textarea id="notes-field" class="form-field" required></textarea>
 
-          <label for="estatus-field">Estatus:</label>
+          <label for="estatus-field"><strong>Estatus:</strong></label>
           <select id="estatus-field" class="form-field" required>
             <option value="default">Selecciona el estatus...</option>
             <option value="true">true</option>
             <option value="false">false</option>
           </select>
 
-          <label for="real-estate-field">Prioridad:</label>
+          <label for="real-estate-field"><strong>Prioridad:</strong></label>
           <select id="real-estate-field" class="form-field" required>
             <option value="default">Selecciona la prioridad...</option>
             <option value="alta">Alta</option>
@@ -52,13 +52,13 @@
             <option value="baja">Baja</option>
           </select>
 
-          <label for="salesman-field">Etiqueta:</label>
+          <label for="salesman-field"><strong>Etiqueta:</strong></label>
           <input type="text" id="salesman-field" required />
 
-          <label for="sale-date-field">Fecha de Vencimiento:</label>
+          <label for="sale-date-field"><strong>Fecha de Vencimiento:</strong></label>
           <input type="date" id="sale-date-field" class="form-field" required />
 
-          <button type="submit" id="btn-guardar" class="btn-submit">Guardar tarea</button>
+          <button type="submit" id="btn-guardar" class="btn-submit"><strong>Guardar tarea</strong></button>
           <input type="hidden" id="task-id-field" value="">
 
         </form>

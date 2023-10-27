@@ -1,7 +1,3 @@
-#PALETA_DE_COLORES {
-  color: #120907 #122a40 #145f87 #209ed8 #20dbd8;
-}
-
 /* #region elementos basicos */
 * {
   box-sizing: border-box;
@@ -14,11 +10,12 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  background: linear-gradient(#02534e, #581f4e);
+  background: linear-gradient(45deg, #040083, #0A0029, #040083);
   background-size: cover;
   background-attachment: fixed;
   color: white;
 }
+
 
 input {
   background-color: transparent;
@@ -31,10 +28,10 @@ input {
 }
 
 .colorful-placeholder::placeholder {
-  color: transparent; /* Oculta el texto del placeholder predeterminado */
-  background-image: linear-gradient(#DAE527, #EEC611); /* Define el fondo degradado con una gama de colores */
-  -webkit-background-clip: text; /* Indica que el fondo degradado se aplique solo al texto */
-  background-clip: text; /* Propiedad equivalente para navegadores no basados en WebKit */
+  color: transparent;
+  background-image: linear-gradient(#fff,#fff); 
+  -webkit-background-clip: text; 
+  background-clip: text; 
 }
 
 /* #endregion */
@@ -69,10 +66,9 @@ section > h1 {
 .table-header .input-group {
   width: 35%;
   height: 100%;
-  background-color: #122a40;
+  background-color: #fff5;
   padding: 0 0.8rem;
   border-radius: 2rem;
-
   flex: auto;
   display: flex;
   justify-content: center;
@@ -84,8 +80,8 @@ section > h1 {
 .table-header .input-group:hover {
   width: 40%;
   color: white;
-  background-color: black;
-  box-shadow: 0 0.1rem 0.4rem #145f87;
+  background-color: #fff8;
+  box-shadow: 0 0.1rem 0.4rem #0002;
 }
 
 .table-header .input-group img {
@@ -104,7 +100,7 @@ section > h1 {
 #table-body {
   width: 95%;
   max-height: calc(89% - 1.6rem);
-  background-color: #122a40;
+  background-color: hsla(0, 0%, 100%, 0.1);
 
   margin: 0.8rem auto;
   border-radius: 0.6rem;
@@ -129,7 +125,7 @@ thead th {
   position: static;
   top: 0;
   left: 0;
-  background-color: #145f87;
+  background-color: #fff5;
   cursor: pointer;
   text-transform: capitalize;
 }
@@ -148,18 +144,18 @@ thead th {
 }
 
 button.btn-action {
-  background-color: #145f87;
+  background-color: #fff5;
   color: white;
   font-size: large;
   width: 15%;
-  border: none;
+  border: 2px solid #fff5;
   border-radius: 10px;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
 
 button.btn-action:hover {
-  background-color: #209ed8;
+  background-color: #fff8;
 }
 
 /* #endregion */
@@ -205,7 +201,8 @@ button.btn-action:hover {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  background-color: #145f87;
+  background: linear-gradient(#040083, #0A0029, #040083, #0A0029);
+  border-radius: 20px;
   padding: 1rem;
   flex-wrap: wrap;
   gap: 1rem;
@@ -221,7 +218,7 @@ textarea,
 select {
   font-size: 1rem;
   padding: 1rem;
-  border: 1px solid #d1dde8;
+  border: 2px solid #d1dde8;
   border-radius: 3px;
 }
 
@@ -234,7 +231,7 @@ textarea:active,
 select:focus,
 select:hover,
 select:active {
-  border: 1px solid #354a5f;
+  border: 2px solid #d1dde8;
 }
 
 input[type="text"],
@@ -274,12 +271,13 @@ button.btn:hover {
 }
 
 button.btn-submit {
-  background-color: #3398db;
+  background-color: #fff5;
   color: #fff;
+  border: 2px solid #fff5;
 }
 
 button.btn-submit:hover {
-  background-color: #217dba;
+  background-color: #fff8;
 }
 
 .modal {
@@ -296,10 +294,10 @@ button.btn-submit:hover {
 }
 
 .modal-content {
-  /* Estilos para el contenido del modal, como tamaño, posición, etc. */
-  width: 53%; /* Ejemplo de ancho del contenido del modal */
-  margin: 10% auto; /* Centra el modal verticalmente */
-  background-color: hsl(199, 74%, 15%); /* Fondo del contenido del modal */
+  width: 53%; 
+  margin: 10% auto; 
+  background-color: #020041;
+  border-radius: 20px;
   padding: 20px;
 }
 
