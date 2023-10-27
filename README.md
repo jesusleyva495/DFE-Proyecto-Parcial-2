@@ -25,7 +25,7 @@
     DFE-PROYECTO-PARCIAL-2/      # Carpeta principal del proyecto
     │
     ├── src
-    │   ├── img/           # Carpeta que almacena archivos estáticos
+    │   ├── img/           # Carpeta que almacena las imagenes utilizadas
     │   ├── index.html     # Archivo html principal
     │   ├── script.js      # Script principal
     │   └──styles.css      # Estilos principales
